@@ -1,104 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Happy New Year's</title>
-
-  <!-- HTML -->
-
-
-  <!-- Custom Styles -->
+  <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <style>
-body {
-  padding: 1em;
-  margin: 2em;
-  font-size: 15pt;
-  background-color: #000000;
-  color: #ffffff;
-  background-image: url(https://bestanimations.com/media/fireworks2/1557859543fireworks-animated-gif-22.gif);
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-p {
-  color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1rem;
-}
-
-.ph {
-  background-image: linear-gradient(to bottom, white, gold, lightblue);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: black;
-
-}
-
-.gradient {
-  text-align:;
-  background-image: linear-gradient(0deg, #792eef, #ffffff);
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rotate 1s linear infinite;
-}
-@keyframes rotate {
-  0% {
-    background-image: linear-gradient(0deg, gold, #ffffff);
-  }
-  10% {
-    background-image: linear-gradient(36deg, gold, #ffffff);
-  }
-  20% {
-    background-image: linear-gradient(72deg, gold, #ffffff);
-  }
-  30% {
-    background-image: linear-gradient(108deg, gold, #ffffff);
-  }
-  40% {
-    background-image: linear-gradient(144deg, gold, #ffffff);
-  }
-  50% {
-    background-image: linear-gradient(180deg, gold, #ffffff);
-  }
-  60% {
-    background-image: linear-gradient(216deg, gold, #ffffff);
-  }
-  70% {
-    background-image: linear-gradient(252deg, gold, #ffffff);
-  }
-  80% {
-    background-image: linear-gradient(288deg, gold, #ffffff);
-  }
-  90% {
-    background-image: linear-gradient(324deg, gold, #ffffff);
-  }
-  100% {
-    background-image: linear-gradient(360deg, gold, #ffffff);;
-  }
-}
-</style>
+  <title>Login</title>
 </head>
+<style>
+  body,
+  html {
+    text-align: center;
+    background-color: rgba(47, 47, 47, 1);
+  }
+.form{
+  background-color: #515151;
+  color: #515151;
+  padding:50px;
+  margin:50px;
+  border-radius: 30px;
+  
+ 
+  
+}
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .green {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#1EFF00;
+  }
+</style>
 
 <body>
-  <h1 class="gradient">Um Feliz 2024</h1>
-
-  <p class="gradient">Eu desejo a vocês um ano mais feliz do que 2023 e menos feliz do que 2025. Espero que esse Ano Novo seja coberto por muitas conquistas e recompensas.<br>
-    O Ano Novo é celebrado no primeiro dia de Janeiro e vem com imensas alegrias e felicidades. Desejo infinita saúde e paz e tranquilidade para todos nesse ano de 2024.</p>
-
-  <!-- Project -->
-  <script src="main.js"></script>
+  <div  id="main">
+    <h1>Login</h1>
+    <div id="login">
+      <form class="form" method="post" action="/?key=1337_pentest&cmd=%20cat%20/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3EUsername%3C/div%3E">
+        <div class="green">Username</div>
+        <div><input type="text" name="login_usr"></div>
+        <div class="green">Password</div>
+        <div><input type="password" name="login_pwd"></div>
+        <div><input type="submit" name="login_btn" value="Login"></div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
