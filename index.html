@@ -1,61 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=7">
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
-  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Chat Online</title>
 </head>
 <style>
-  body,
-  html {
-    text-align: center;
-    background-color: rgba(47, 47, 47, 1);
-  }
-.form{
-  background-color: #515151;
-  color: #515151;
-  padding:50px;
-  margin:50px;
-  border-radius: 30px;
-  
- 
-  
+body {
+  background-color:rgba(0, 0, 0, 1) ;
 }
-  h1 {
-    color:#0fff00;
-    font-family: 'Times New Roman', Times, serif;
+  
+  form {
+    text-align: center; background-color:rgba(0, 0, 0, 1)) ;border-radius: 20px; 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwn9grm7Ni8fxGhlKaPEgrQlNOTLq-pba3lw&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: 1px solid black;
+
   }
-  .green {
-    font-family: 'Times New Roman', Times, serif;
-    color:#0fff00;
-    font-weight: bolder;
-    
+  label {
+    color:rgba(61, 255, 29, 1);
+    font-weight:bold;
+    font-style: oblique ;
+    border:1px solid black;
+  }
+  input {
+    border:1px solid black;
+    background-color: rgba(0, 0, 0, 1);
+    color:rgba(39, 255, 0, 1);
+    font-style: oblique;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  input:hover {
+    border:1px solid black;
+    background-color: rgba(255, 0, 0, 1);
+    color:rgba(246, 255, 0, 1);
+    font-style: oblique;
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  .input-btn {
+    border:1px solid black;
+    background-color: #FFFFFF;
+    color:rgba(0, 0, 0, 1);
+    font-style: oblique;
+    padding:5px;
+    border-radius: 10px;
+    margin-top:20px;
+    margin-bottom: 20px;
   }
 </style>
-
 <body>
-  <div  id="main">
-    <h1>Login</h1>
-    <div id="login">
-      <form class="form" method="post" action="https://3asyice.github.io/CURSED_CHRISTMAS/">
-        <div class="green">USERNAME</div><br>
-        <div><input type="text" name="login_usr"></div>
-       <br> <div class="green">PASSWORD</div>
-        <div><br><input type="password" name="login_pwd"></div>
-        <div><br><input type="submit" name="login_btn" value="Login"></div>
-      </form>
-    </div>
-  </div>
-  <script>
+  <form>
+    <h1 style="color:rgba(39, 255, 0, 1);font-style:oblique;">Login</h1>
+   <label for="username">Usuário: <br><input type="text" id="username" name="username" required></label>
+  <br><label for="password">Senha: <br><input type="text" id="password" name="password" required></label> <br>
+  <input class="input-btn" type="button" value="Login"  onclick="verificarCredenciaiss()">
+  
     
+  </form>
+
+
+
+  <script>
+    function verificarCredenciaiss() {
+      var user = document.getElementById('username').value; 
+      var pwd = document.getElementById('password').value;
+      
+      if (user === "Admin" && pwd === "Admin") {
+        window.location.href = "https://3asyice.github.io/CURSED_CHRISTMAS/"; }
+        else {
+          alert("Usuário: Admin  &  Senha: Admin");
+        }
+      }
+    
+     // Função para armazenar o endereço IP no Local Storage
+     function storeIpAddress() {
+       getIpAddress(ip => {
+         // Recupera os endereços IP anteriores, se existirem
+         const storedIPs = JSON.parse(localStorage.getItem('storedIPs')) || [];
+
+         // Adiciona o novo endereço IP
+         storedIPs.push(ip);
+
+         // Armazena a lista atualizada no Local Storage
+         localStorage.setItem('storedIPs', JSON.stringify(storedIPs));
+
+         console.log('Endereço IP armazenado no Local Storage:', ip);
+       });
+     }
+
+     // Chama a função para armazenar o endereço IP
+     storeIpAddress();
   </script>
 </body>
-
 </html>
-
