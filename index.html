@@ -71,30 +71,14 @@ body {
       var pwd = document.getElementById('password').value;
       
       if (user === "Admin" && pwd === "Admin") {
-        window.location.href = "https://3asyice.github.io/CURSED_CHRISTMAS/"; }
-        else {
-          alert("Usuário: Admin  &  Senha: Admin");
-        }
-      }
     
-     // Função para armazenar o endereço IP no Local Storage
-     function storeIpAddress() {
-       getIpAddress(ip => {
-         // Recupera os endereços IP anteriores, se existirem
-         const storedIPs = JSON.parse(localStorage.getItem('storedIPs')) || [];
-
-         // Adiciona o novo endereço IP
-         storedIPs.push(ip);
-
-         // Armazena a lista atualizada no Local Storage
-         localStorage.setItem('storedIPs', JSON.stringify(storedIPs));
-
-         console.log('Endereço IP armazenado no Local Storage:', ip);
-       });
-     }
-
-     // Chama a função para armazenar o endereço IP
-     storeIpAddress();
+    // Armazene a informação de login (não seguro)
+    localStorage.setItem('loggedIn', 'true');
+    window.location.href = "https://3asyice.github.io/CURSED_CHRISTMAS/";
+  } else {
+    alert('Login falhou');
+  }
+}     
   </script>
 </body>
 </html>
