@@ -8,8 +8,21 @@
 </head>
 <style>
 body {
-  padding-top: 100px;
+  padding-top: 20px;
   background-color:rgba(0, 0, 0, 1) ;
+  background-image: url(https://gifdb.com/images/featured/black-background-qzfw8ae8nn975d3j.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+ animation: fadeIn 2s ease-in-out; /* ajuste a duração e a função de temporização conforme necessário */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
   form {
@@ -19,6 +32,8 @@ body {
     background-repeat: no-repeat;
     background-position:center;
     border: 1px solid black;
+    border-radius:30px;
+    margin:30px;
 
   }
   label {
