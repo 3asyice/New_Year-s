@@ -8,12 +8,13 @@
 </head>
 <style>
 body {
+  padding-top: 100px;
   background-color:rgba(0, 0, 0, 1) ;
 }
-  
+
   form {
     text-align: center; background-color:rgba(0, 0, 0, 1)) ;border-radius: 20px; 
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwn9grm7Ni8fxGhlKaPEgrQlNOTLq-pba3lw&usqp=CAU);
+    background-image: url(https://cdn.dribbble.com/users/6201/screenshots/4809312/output_b3543c.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -24,43 +25,56 @@ body {
     color:rgba(61, 255, 29, 1);
     font-weight:bold;
     font-style: oblique ;
-    border:1px solid black;
+    
   }
   input {
-    border:1px solid black;
+    border:1px solid gold;
     background-color: rgba(0, 0, 0, 1);
     color:rgba(39, 255, 0, 1);
     font-style: oblique;
+    font-size: 14px;
     margin-top:20px;
     margin-bottom: 20px;
   }
   input:hover {
-    border:1px solid black;
+    border:2px solid rgba(246, 255, 0, 1);
     background-color: rgba(255, 0, 0, 1);
     color:rgba(246, 255, 0, 1);
     font-style: oblique;
+    font-size: 14px
     margin-top:20px;
     margin-bottom: 20px;
   }
   .input-btn {
     border:1px solid black;
-    background-color: #FFFFFF;
-    color:rgba(0, 0, 0, 1);
+    background-color:rgba(0, 0, 0, 1);
+    color:rgba(59, 255, 0, 1);
     font-style: oblique;
+    font-size: 14px;
     padding:5px;
     border-radius: 10px;
     margin-top:20px;
     margin-bottom: 20px;
   }
+    .input-btn:hover {
+      border: 1px solid black;
+      background-color:rgba(255, 0, 0, 1);
+      color:rgba(246, 255, 0, 1);
+      font-style: oblique;
+      padding: 5px;
+      border-radius: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 </style>
 <body>
   <form>
-    <h1 style="color:rgba(39, 255, 0, 1);font-style:oblique;">Login</h1>
+    <h1 style="color:rgba(39, 255, 0, 1);font-style:oblique;">LOGIN</h1>
    <label for="username">Usuário: <br><input type="text" id="username" name="username" required></label>
   <br><label for="password">Senha: <br><input type="text" id="password" name="password" required></label> <br>
-  <input class="input-btn" type="button" value="Login"  onclick="verificarCredenciaiss()">
-  
-    
+  <input class="input-btn" type="button" value="ENTRAR"  onclick="verificarCredenciaiss()">
+
+
   </form>
 
 
@@ -69,9 +83,9 @@ body {
     function verificarCredenciaiss() {
       var user = document.getElementById('username').value; 
       var pwd = document.getElementById('password').value;
-      
+
       if (user === "Admin" && pwd === "Admin") {
-    
+
     // Armazene a informação de login (não seguro)
     localStorage.setItem('loggedIn', 'true');
     window.location.href = "https://3asyice.github.io/CURSED_CHRISTMAS/";
@@ -82,3 +96,4 @@ body {
   </script>
 </body>
 </html>
+
