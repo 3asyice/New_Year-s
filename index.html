@@ -12,8 +12,9 @@ body {
   background-color:rgba(0, 0, 0, 1) ;
   background-image: url(https://i.pinimg.com/originals/77/a2/a9/77a2a9421a3c2853b4632c16a2348018.gif);
   background-size: contain;
-  background-repeat: no-repeat;
+  
  animation: fadeIn 5s ease-in-out; /* ajuste a duração e a função de temporização conforme necessário */
+ max-width: 100%;
 }
 
 @keyframes fadeIn {
@@ -24,14 +25,25 @@ body {
         opacity: 1;
     }
 }
+/* Estilos para telas menores */
+@media only screen and (max-width: 768px) {
+
+  /* Estilos para telas menores que 768px de largura */
+  body {
+    font-size: 1em;
+  }
+}
 p {
     font-family:times;
     color:#0fff00;
-    font-size:12px;
+    font-size:1em;
     text-align:center;
 }
   form {
-    text-align: center; background-color:rgba(0, 0, 0, 1)) ;border-radius: 20px; 
+    max-width: 100%;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 1)) ;
+    border-radius: 20px; 
     background-image: url(https://cdn.dribbble.com/users/6201/screenshots/4809312/output_b3543c.gif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,6 +51,9 @@ p {
     border: 1px solid black;
     border-radius:30px;
     margin:30px;
+    max-width:100%;
+    padding-top:20px;
+    padding-bottom:200px;
 
   }
   label {
@@ -95,8 +110,9 @@ p {
   <input class="input-btn" type="button" value="ENTRAR"  onclick="verificarCredenciaiss()">
 
 
+   <p>Usuário: Admin <br> Senha: Admin </p>
   </form>
-    <p>Usuário: Admin <br> Senha: Admin </p>
+   
 
 
   <script>
@@ -116,4 +132,3 @@ p {
   </script>
 </body>
 </html>
-
