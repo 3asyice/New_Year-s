@@ -6,128 +6,23 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Login</title>
 </head>
-<style>
-body {
-  padding-top: 20px;
-  background-color:rgba(0, 0, 0, 1) ;
-  background-image: url(https://i.pinimg.com/originals/77/a2/a9/77a2a9421a3c2853b4632c16a2348018.gif);
-  background-size: contain;
-  
- animation: fadeIn 5s ease-in-out; /* ajuste a duração e a função de temporização conforme necessário */
- max-width: 100%;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-/* Estilos para telas menores */
-@media only screen and (max-width: 768px) {
-
-  /* Estilos para telas menores que 768px de largura */
-  body {
-    font-size: 1em;
-  }
-}
-p {
-    font-family:times;
-    color:#0fff00;
-    font-size:1em;
-    text-align:center;
-}
-  form {
-    max-width: 100%;
-    text-align: center;
-    background-color:rgba(0, 0, 0, 1)) ;
-    border-radius: 20px; 
-    background-image: url(https://cdn.dribbble.com/users/6201/screenshots/4809312/output_b3543c.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    border: 1px solid black;
-    border-radius:30px;
-    margin:30px;
-    max-width:100%;
-    padding-top:20px;
-    padding-bottom:200px;
-
-  }
-  label {
-    color:rgba(61, 255, 29, 1);
-    font-weight:bold;
-    font-style: oblique ;
-    
-  }
-  input {
-    border:1px solid gold;
-    background-color: rgba(0, 0, 0, 1);
-    color:rgba(39, 255, 0, 1);
-    font-style: oblique;
-    font-size: 14px;
-    margin-top:20px;
-    margin-bottom: 20px;
-  }
-  input:hover {
-    border:2px solid rgba(246, 255, 0, 1);
-    background-color: rgba(255, 0, 0, 1);
-    color:rgba(246, 255, 0, 1);
-    font-style: oblique;
-    font-size: 14px
-    margin-top:20px;
-    margin-bottom: 20px;
-  }
-  .input-btn {
-    border:1px solid black;
-    background-color:rgba(0, 0, 0, 1);
-    color:rgba(59, 255, 0, 1);
-    font-style: oblique;
-    font-size: 14px;
-    padding:5px;
-    border-radius: 10px;
-    margin-top:20px;
-    margin-bottom: 20px;
-  }
-    .input-btn:hover {
-      border: 1px solid black;
-      background-color:rgba(255, 0, 0, 1);
-      color:rgba(246, 255, 0, 1);
-      font-style: oblique;
-      padding: 5px;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
   <form>
     <h1 style="color:rgba(39, 255, 0, 1);font-style:oblique;">LOGIN</h1>
    <label for="username">Usuário: <br><input type="text" id="username" name="username" required></label>
-  <br><label for="password">Senha: <br><input type="text" id="password" name="password" required></label> <br>
+  <br><label for="password">Senha: <br><input type="password" id="password" name="password" required></label> <br>
   <input class="input-btn" type="button" value="ENTRAR"  onclick="verificarCredenciaiss()">
-
-
-   <p>Usuário: Admin <br> Senha: Admin </p>
   </form>
    
+<p>1st clue: see the <a href="https://maps.app.goo.gl/EWwaWsTfYmcxrGbi9">map</a>.</p>
+<p>2nd clue: see the <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0aOcQa8MNGhTfyX6MawkFZ8KPnRQMIeum3QDvL6IEO9rJuoFAMR4iTF0&s=10">image</a>.</p>
+<article>
+  <p style="color:#ffffff;">Good Lucky!</p>
+</article>
 
-
-  <script>
-    function verificarCredenciaiss() {
-    const user = document.getElementById('username').value;
-    const pwd = document.getElementById('password').value;
-
-    if (user === "Admin" && pwd === "Admin") {
-        // Armazene a informação de login (não seguro)
-        localStorage.setItem('loggedIn', 'true');
-        window.location.href = "https://3asyice.github.io/CURSED_CHRISTMAS/"; // Redirecionamento para o novo domínio
-    } else {
-        alert('Usuário: Admin  &  Senha: Admin');
-    }
-      }
+  <script src="script.js">
+    
   </script>
 </body>
 </html>
