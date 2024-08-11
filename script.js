@@ -12,7 +12,7 @@ function c() {
 
   const a = document.getElementById('x').value;
   const b = document.getElementById('y').value;
-  if (a === 'Base Administrativa da Guarnição de Santa Maria' && b === 'tyler') {
+  if (a === 'Base' && b === 'Tyler) {
     localStorage.setItem('usuarioAutenticado', 'true');
     window.location.href = 'https://www.big-loser.site';
   } else {
