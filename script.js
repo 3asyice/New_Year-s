@@ -1,12 +1,22 @@
-function verificarCredenciaiss() {
-  const user = document.getElementById('username').value;
-  const pwd = document.getElementById('password').value;
+var g = document.getElementById('i');
+    var h = false;
+    
+    function d() {
+      h = !h;
+      g.style.display = h ?
+      'block' : 'none';
+    }
+   
 
-  if (user === "6° Brigada de Infantaria Blindada" && pwd === "Jack") {
-    // Armazene a informação de login (não seguro)
-    localStorage.setItem('loggedIn', 'true');
-    window.location.href = "https://www.big-loser.site"; // Redirecionamento para o novo domínio
+function c() {
+
+  const a = document.getElementById('x').value;
+  const b = document.getElementById('y').value;
+  if (a === 'Base Administrativa da Guarnição de Santa Maria' && b === 'tyler') {
+    localStorage.setItem('usuarioAutenticado', 'true');
+    window.location.href = 'https://www.big-loser.site';
   } else {
-    alert('Senha ou usuário incorreto!');
+    document.getElementById('mistake').play();
+    alert('Eu sou a mensagem de erro deste site.');
   }
 }
