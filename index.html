@@ -1,28 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>Enter-me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+   
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-  <form>
-    <h1 style="color:rgba(39, 255, 0, 1);font-style:oblique;">LOGIN</h1>
-   <label for="username">Usuário: <br><input type="text" id="username" name="username" required></label>
-  <br><label for="password">Senha: <br><input type="password" id="password" name="password" required></label> <br>
-  <input class="input-btn" type="button" value="ENTRAR"  onclick="verificarCredenciaiss()">
-  </form>
+   <audio id="mistake" src="https://raw.githubusercontent.com/3asyice/login/main/THE STRANGERS.mp3"></audio>
+    <h1>LOG-IN</h1>
+    <form onsubmit="event.preventDefault(); c();">
+        <label for="y">Usuário:</label><br><br>
+        <input type="text" id="x" required><br><br>
+        <label for="x">Senha:</label><br><br>
+        <input type="password" id="y" required><br><br>
+        <input type="submit" value="Entrar">
+    </form>
+    <hr>
+    <p>Guia para a próxima pista: <img width="5%" src="https://cdn.icon-icons.com/icons2/906/PNG/512/question-circular-button-1_icon-icons.com_69968.png" onclick="d()"></img></p>
+    <div class="i" id="i">
+        <div style="text-align:left;margin-top:30px;margin-left:50px;">
+          <a><img onclick="d()" src="https://cdn.icon-icons.com/icons2/325/PNG/256/Letter-X-icon_34793.png" alt="back" width="10%"></a>
+        </div>
+    <p>Um Mapa:</p>
+    <div style="text-align: center;">
+   <a href="https://maps.app.goo.gl/WcbN2wBPBJKnJZYp6"><img src="https://cdn.icon-icons.com/icons2/1431/PNG/128/pirateislandtreasuremapicon_98566.png" alt="map"></a>
+</div>
+<hr>
    
-<p>1st clue: see the <a href="https://maps.app.goo.gl/EWwaWsTfYmcxrGbi9">map</a>.</p>
-<p>2nd clue: see the <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0aOcQa8MNGhTfyX6MawkFZ8KPnRQMIeum3QDvL6IEO9rJuoFAMR4iTF0&s=10">image</a>.</p>
-<article>
-  <p style="color:#ffffff;">Good Lucky!</p>
-</article>
+    <p>Uma Foto:</p>
+    <div style="text-align: center;">
+   <a href="https://images-prod.dazeddigital.com/1024/azure/dazed-prod/1270/9/1279573.jpg"><img src="https://cdn.icon-icons.com/icons2/1508/PNG/512/rapidphotodownloader_103920.png" alt="photo" height="100%"width="30%"></a>
+</div>
+<hr>
 
-  <script src="script.js">
-    
-  </script>
+
+    </div>
+   
+  
+ <script src="main.js">
+ </script>
 </body>
 </html>
