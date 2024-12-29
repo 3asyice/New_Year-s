@@ -211,15 +211,13 @@ function authentication() {
   const user = document.getElementById('nome').value;
   const psw = document.getElementById('senha').value;
   const error = document.getElementById('error_Msg');
-  const errorAudio = new Audio('https://raw.githubusercontent.com/3asyice/Noticias/main/M/Song/NOAH GREY - self Destruct.opus');
 
-  if (user === 'dogjosi' && psw === '141812')
+  if (user === 'dog' && psw === '141812')
   {
     login.style.display = 'none';
   }
   else {
     error.style.display = 'block';
-    errorAudio.play();
     setTimeout(() => {
       error.style.display = 'none';
     }, 3000)
